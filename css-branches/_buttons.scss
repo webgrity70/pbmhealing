@@ -1,0 +1,49 @@
+/* button settings */
+button{
+	outline: 0;
+	&:focus{
+		outline: none;
+	}
+}
+.btn{
+	display: inline-block;
+	border: 0;
+	outline: 0;
+	padding: 13px 35px;
+	text-align: center;
+	font-family: 'FjallaOne-Regular';
+	font-size: 15px;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	position: relative;
+	z-index: 1;
+	transition: 150ms;
+
+	&.btn-primary{
+		background-color: $primary;
+		color: #fff;
+		
+
+		&:hover{
+			background-color: #212121;
+		}
+
+	}
+
+	&.btn-light{
+		background-color: #fff;
+		color: #555555;
+
+		&:hover{
+			background-color: $primary;
+			color: #fff;
+		}
+	}
+}
+
+.btnTransparent{
+	background-color: transparent;
+	padding: 1px;
+	display: inline-block;
+	border: 0;
+}

@@ -1,0 +1,35 @@
+/*
+
+Theme Name: Hello theme
+Theme URI: https://github.com/webgrity70/hellotheme
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Custom theme design with ACF, absolutly free
+Requires at least: 5.6
+Requires PHP: 7.0
+Version: 1.2
+Tested up to: 5.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hello-theme
+*/
+
+/* from css-branches // custom or override variable */
+
+@import "css-branches/variables";
+
+/* from bootstrap */
+
+@import "assets/bootstrap4.5/scss/functions";
+@import "assets/bootstrap4.5/scss/variables";
+@import "assets/bootstrap4.5/scss/mixins";
+@import "assets/bootstrap4.5/scss/root";
+@import "assets/bootstrap4.5/scss/reboot";
+@import "assets/bootstrap4.5/scss/images";
+@import "assets/bootstrap4.5/scss/grid";
+@import "assets/bootstrap4.5/scss/nav";
+@import "assets/bootstrap4.5/scss/navbar";
+@import "assets/bootstrap4.5/scss/bootstrap-grid";
+@import "assets/bootstrap4.5/scss/transitions";
+@import "assets/bootstrap4.5/scss/utilities/text";
+@import "assets/bootstrap4.5/scss/carousel";

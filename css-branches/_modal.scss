@@ -1,0 +1,109 @@
+.modalBackdrop{
+	background-color: rgba(0,0,0,.55);
+	position: fixed;
+	z-index: 101;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.modal{
+	
+	&Search{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, .97);
+		z-index: 101;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		opacity: 0;
+		visibility: hidden;
+		transition: 400ms;
+
+		&.active{
+			opacity: 1;
+			visibility: visible;
+
+			.inputWrpr{
+				transform: translateY(0);
+			}
+		}
+
+			.btnCloseModal{
+				color: $primary;
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				top: 50px;
+				right: 50px;
+				font-size: 24px;
+				outline: none;
+				z-index: 151;
+
+				&:hover{
+					color: #fff;
+				}
+			}
+	}
+
+	&Content{
+		width: 100%;
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+
+		.label{
+			/* color: #fff; */
+			font-size: 24px;
+		}
+
+		.inputWrpr{
+			position: relative;
+			transform: translateY(10px);
+			transition: 350ms;
+
+			.formControl{
+				height: 55px;
+			}
+		}
+		.btnSearch{
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			padding: 5px 20px;
+			background-color: $primary;
+			font-size: 24px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+			transform: translateX(100%);
+			opacity: 0;
+			transition: 200ms;
+
+			&.active{
+				transform: translateX(0);
+				opacity: 1;
+			}
+
+			&:hover{
+				background-color: #487539;
+			}
+		}
+		
+	}
+
+
+
+}
