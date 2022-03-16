@@ -495,6 +495,8 @@ button:focus {
 
 .custom-logo {
   transition: 300ms linear;
+  height: auto;
+  width: auto;
 }
 
 .navbar-nav {
@@ -585,9 +587,9 @@ button:focus {
     max-width: 1400px;
   }
 
-  .mainBanner {
-    max-height: 800px;
-  }
+  /*     .mainBanner{
+          max-height: 800px;
+      } */
 }
 .afterMainBanner {
   margin-top: 2rem;
@@ -1440,6 +1442,19 @@ button:focus {
   }
   .productContF .cSubTitle {
     font-size: 20px;
+  }
+
+  .enquiryCont {
+    flex-wrap: wrap;
+    font-size: 18px;
+  }
+  .enquiryCont img {
+    max-width: 20px;
+  }
+
+  .reviewBoxFullWidthWrpr .owl-item {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 @media screen and (max-width: 480px) {

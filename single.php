@@ -24,7 +24,7 @@
 
 					<div class="thumbnailWrpr mb-4">
 						<?php
-							the_post_thumbnail('full', ['class'=>'w-100']);
+							the_post_thumbnail('full', ['class'=>'w-100 img-fluid']);
 
 							$category = get_the_category(get_the_ID());
 							if (count($category)>0) {

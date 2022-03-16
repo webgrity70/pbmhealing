@@ -125,6 +125,8 @@ a {
 
 .custom-logo {
     transition: 300ms linear;
+    height: auto;
+    width: auto;
 }
 
 .navbar-nav {
@@ -251,9 +253,9 @@ a {
     .container{
         max-width: 1400px;
     }
-    .mainBanner{
+/*     .mainBanner{
         max-height: 800px;
-    }
+    } */
 }
 
 .afterMainBanner {
@@ -1162,6 +1164,20 @@ a {
         .cSubTitle{
             font-size: 20px;
         }
+    }
+
+    .enquiryCont{
+        flex-wrap: wrap;
+        font-size: 18px;
+
+        img{
+            max-width: 20px;
+        }
+    }
+
+    .reviewBoxFullWidthWrpr .owl-item{
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
 
